@@ -1,0 +1,1 @@
+"use strict";require(["./config"],function(){require(["jquery","cookie","headfoot","masklayer","public"],function(e,n){function o(){this.addEvent()}o.prototype={constructor:o,addEvent:function(){},verifyPassword:function(n){n=n||window.event,e.ajax({})}},new o})});

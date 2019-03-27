@@ -1,0 +1,48 @@
+$width: 500px;
+$bg-color: #987134;
+
+body {
+	height: 300px;
+	background: $bg-color;
+	width: 1000px;
+	color: #000;
+}
+
+@mixin base($h) {
+	width: $width / 2;
+	height: $h;
+	padding-top: 50%;
+	border: 3px solid #f00;
+}
+
+.base-box {
+	@include base(300px);
+}
+
+.second-box {
+	@include base(500px);
+}
+
+.container {
+	width: 100%;
+	height: 1000px;
+
+	.box {
+		border: 1px solid;
+		width: $width * 1.3;
+		height: 50%;
+
+		span {
+			display: inline-block;
+			width: $width;
+
+			a {
+				text-decoration: none;
+
+				img {
+					border: 0;
+				}
+			}
+		}
+	}
+}

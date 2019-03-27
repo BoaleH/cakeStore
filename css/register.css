@@ -1,0 +1,158 @@
+
+        /*注册*/
+        .register{
+            width: 100%;
+        }
+        fieldset{
+            width: 100%;
+            border: none;
+            border-top: 1px dashed #d5d5d5;
+            /*text-align: right;*/
+            /*height: 289px;*/
+            /*position: relative;*/
+        }
+        legend{
+            font-size: 16px;
+            font-weight: 700;
+            color: #909090;
+            /*text-align: center;*/
+            padding: 0 10px;
+            /*left: 50%;*/
+            /*position: absolute;*/
+            margin-left: 470px;
+        }
+
+        .loveHeart{
+            float: right;
+            margin-right: 45px;
+            margin-top: 30px;
+            padding-left: 23px;
+            height: 14px;
+            line-height: 14px;
+            background: url("/Nhaolilai/img/aixin.png") no-repeat 0 3px;
+        }
+        .big{
+            width: 310px;
+            margin: 0 auto;
+            margin-top: 45px;
+        }
+
+        .box{
+            width: 310px;
+            height: 40px;
+            margin-bottom: 10px;
+            /*background-color: red;*/
+           position: relative;
+        }
+        .leftbox{
+            width: 84px;
+            height: 40px;
+            line-height: 40px;
+            background-color: #ededed;
+            text-align: center;
+            color: #666;
+            font-size: 12px;
+            float: left;
+        }
+        .box input{
+            width: 220px;
+            height: 40px;
+            color: #666;
+            font-size: 12px;
+            box-sizing: border-box;
+            padding-left: 15px;
+            line-height: 40px;
+            background-color: #ededed;
+            float: right;
+            border: none;
+            outline: none;
+        }
+        .duanxin,.tupian{
+            position: relative;
+        }
+        .duanxin span,.tupian span{
+            position: absolute;
+            right: 5px;
+            cursor: pointer;
+
+        }
+        .duanxin span{
+            width: 103px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            background-color: #87d0e3;
+            top: 5px;
+        }
+        .tupian{
+        	position: relative;
+        }
+        #verificationCodeImg{
+            width: 50px;
+            height: 18px;
+            background-color: #fff;
+            top: 18px;
+            position: absolute;
+            left: 256px;
+        }
+        
+        
+
+        .kuang{
+            width: 310px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 12px;
+            color: #666;
+            position: relative;
+            text-align: center;
+        }
+        .querenmima{
+            margin-bottom: 0;
+            text-align: center;
+            /**/
+        }
+        .kuang input{
+            border: none;
+            border: 1px solid #000;
+            /*margin-left: 76px;*/
+            /*margin-right: 10px;*/
+            position: absolute;
+            top: 14px;
+            left: 57px;
+        }
+        .zc{
+            width: 310px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 16px;
+            color: #fff;
+            font-weight: 700;
+            background-color: #87d0e3;
+            outline: none;
+            border: none;
+            margin-bottom: 76px;
+        }
+        #lengthPrompt,#repeatPrompt,#verificationCodePrompt,#duanxinyanzhengmatishi,#mimatishi{
+        	display: block;
+        	width: 100px;
+        	height: 14px;
+        	line-height: 14px;
+        	font-size: 14px;
+        	position: absolute;
+        	/*background-color: red;*/
+            right: -120px;
+            color: red;
+        }
+        #lengthPrompt{
+        	top: 0;
+        }
+        #repeatPrompt{
+        	bottom: 0;
+        }
+		#duanxinyanzhengmatishi{
+			background-color: #fff;
+		}

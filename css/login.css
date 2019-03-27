@@ -1,0 +1,109 @@
+/*注册*/
+.loginForm{
+    width: 100%;
+}
+fieldset{
+    width: 100%;
+    border: none;
+    border-top: 1px dashed #d5d5d5;
+    /*text-align: right;*/
+    height: 289px;
+    /*position: relative;*/
+}
+legend{
+    font-size: 16px;
+    font-weight: 700;
+    color: #909090;
+    /*text-align: center;*/
+    padding: 0 10px;
+    /*left: 50%;*/
+    /*position: absolute;*/
+    margin-left: 490px;
+}
+.big{
+    width: 310px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.username,.pw,.sub{
+    width: 310px;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.u,.p{
+    float: left;
+    width: 66px;
+    height: 40px;
+    line-height: 40px;
+    color: #626262;
+    text-align: center;
+    background-color:#ededed ;
+}
+.username input,.wangji{
+    float: right;
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    color: #a2a2a2;
+    background-color:#ededed ;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+}
+.wangji input{
+    float: left;
+    width: 126px;
+    height: 40px;
+    line-height: 40px;
+    color: #a2a2a2;
+    background-color:#ededed ;
+    border: none;
+    outline: none;
+}
+.wangji span{
+    float: right;
+    margin-right: 20px;
+    line-height: 40px;
+    height: 40px;
+    color: #626262;
+}
+.sub #dbtn{
+    width: 195px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #87d0e3;
+    text-align: center;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.sub a{
+    width: 107px;
+    height: 40px;
+    line-height: 40px;
+    color: #626262;
+    float: right;
+    background-color: #ededed;
+    text-align: center;
+}
+#pwordPrompt{
+    width: 100px;
+    height: 14px;
+    line-height: 14px;
+    /*background-color: red;*/
+    position: absolute;
+    top: 2px;
+    right: -100px;
+    color: red;
+}
+.pw{
+    position: relative;
+}

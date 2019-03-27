@@ -1,0 +1,1 @@
+"use strict";require(["./config"],function(){require(["jquery","goods","headfoot","masklayer","public"],function(o,e){new e(18,o(".goods:eq(0)")),new e(18,o(".goods:eq(0)")),o(window).scroll(function(){o(document).scrollTop()>=o(document).height()-o(window).height()&&new e(18,o(".goods:eq(0)"),"_bottom")})})});

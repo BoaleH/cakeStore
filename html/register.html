@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="/Nhaolilai/css/public.css">
+        <link rel="stylesheet" href="/Nhaolilai/css/register.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <header></header>
+
+
+        <form action="/Nhaolilai/php/register.php" method="get" class="register">
+            <fieldset>
+                <legend>用户注册</legend>
+                <div class="loveHeart">
+                    注册赠送积分：100
+                </div>
+                <div class="big">
+                    <div class="box">
+                        <div class="leftbox">手机号</div>
+                        <input type="text" name="phoneNumber" id="phoneNumber">
+                        <span id="lengthPrompt"></span>
+                        <span id="repeatPrompt"></span>
+                    </div>
+                    <div class="box tupian">
+                        <div class="leftbox">验证码</div>
+                        <input type="text" name="verificationCode" id="verificationCode">
+                        <img src="/Nhaolilai/img/shengchengyanzhengma.png" id="verificationCodeImg"/>
+                        <span id="verificationCodePrompt"></span>
+                    </div>
+                    <!--<div class="box duanxin">
+                        <div class="leftbox">短信验证码</div>
+                        <input type="text" name="duanxinyanzhengma" id="duanxinyanzhengma">
+                        <span>获取短信验证码</span>
+                        <span id="duanxinyanzhengmatishi"></span>
+                    </div>-->
+                    <div class="box">
+                        <div class="leftbox">密码</div>
+                        <input type="password" name="pword" id="pword">
+                    </div>
+                    <div class="box querenmima">
+                        <div class="leftbox">确认密码</div>
+                        <input type="password" name="qpword" id="qpword">
+                        <span id="mimatishi"></span>
+                    </div>
+                    <div class="kuang">
+                        <input type="checkbox" name="cbox" id="cbox"><span>我已接收并阅读“服务条款”</span>
+                    </div>
+                    
+                    <div class="zc" id="zcbtn">注册</div>
+                </div>
+    
+    
+    
+            </fieldset>
+    
+    
+        </form>
+
+
+        <footer></footer>
+    </div>
+
+    <!-- requireJS模块 -->
+    <script src="/Nhaolilai/js/requirejs/require.js" data-main="/Nhaolilai/js/js/register"></script>
+</body>
+</html>

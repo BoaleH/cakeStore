@@ -1,0 +1,515 @@
+/*初始化*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    /*overflow-x: hidden;*/
+
+}
+.main{
+    width: 996px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+/*遮罩层*/
+.mask-layer{
+    width: 100%;
+    height: 1711px;
+    position: absolute;
+    background: rgb(0, 0, 0,0.4);
+    z-index: 1000000;
+    display: none;
+    /*opacity: 0.4;*/
+}
+.address{
+    
+    width: 380px;
+    height: 204px;
+    padding: 20px 10px;
+    margin: 180px auto;
+    display: block;
+    background: #fff;
+}
+.address-img{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background: url(/Nhaolilai/img/didian.jpg) no-repeat ;
+    background-size:80px 80px ;
+}
+.wel{
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: 1px solid #6bc4df;
+    color: #6bc4df;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 14px;
+}
+.address-sel{
+    width: 380px;
+    margin-top: 23px;
+    margin: 0 auto;
+}
+.address-sel-list,.address-sel-btn{
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    border-radius: 3px;
+    float: left;
+    margin-top: 23px;
+}
+.address-sel-list{
+    background: url(/Nhaolilai/img/cityjiant.png) no-repeat 77px 12px;
+    background-size:12px 12px ;
+    background-color: #6bc4df;
+    color: #fff;
+    box-sizing: border-box;
+    padding-left:20px ;
+    /*padding-top: 12px;*/
+    margin-left: 64px;
+    position: relative;
+}
+.address-sel-btn{
+    display: block;
+    color: #000000;
+    text-align: center;
+    background-color: #ff0;
+    margin-left: 50px;
+}
+.address-sel-list:hover .newProvince{
+    display: block;
+}
+.newProvince{
+    width: 100px;
+    position: absolute;
+    left: 0;
+    display: none;
+}
+.cityshover{
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    background-color: #6bc4df;
+    color: #fff;
+    box-sizing: border-box;
+    padding-left:20px ;
+    position: relative;
+}
+.cityshover:hover{
+    background-color: #fff;
+    color: #000000;
+}
+.cityshover:hover .newCity{
+    display: block;
+}
+.newCity{
+    width: 100px;
+    position: absolute;
+    left: 80px;
+    top: 0;
+    background-color: #fff;
+    display: none;
+    z-index: 100003;
+}
+.changeCity{
+    display: block;
+    width: 100px;
+    height: 35px;
+    background-color:#fff;
+    color: #000;
+    box-sizing: border-box;
+    padding-left:20px ;
+    line-height: 35px;
+}
+/*头部*/
+.index-header{
+    width: 100%;
+    height: 103px;
+    padding-top: 22px;
+}
+/*定位*/
+.index-header-position{
+    width: 100%;
+    height: 16px;
+    line-height: 16px;
+}
+.index-header-position-box{
+    float: right;
+}
+.index-header-position a{
+    color: #6bc4df;
+    font-size: 12px;
+    float: left;
+}
+.i-position,.shopping-car{
+    width: 64px;
+    text-align: center;
+
+}
+.i-position{
+    background: url("/Nhaolilai/img/dingwei.png") no-repeat 0 0;
+}
+.shopping-car{
+    background: url("/Nhaolilai/img/shoppingcar.png") no-repeat 0 0;
+}
+.login{
+    margin-right: 20px;
+}
+#loginName{
+    margin-left:20px;
+    /*color: red;*/
+}
+/*导航*/
+.nav{
+    width: 100%;
+    height: 87px;
+    /*background-color: yellow;*/
+}
+.nav-logo{
+    width: 151px;
+    height: 61px;
+    float: left;
+}
+.nav-logo img{
+    width: 151px;
+    height: 61px;
+    border: none;
+}
+.nav ul{
+    float: left;
+    margin-top: 12px;
+}
+.nav ul li{
+    float: left;
+    border-right:1px solid #6bc4df ;
+    width: 165px;
+}
+.nav ul li a{
+    width: 165px;
+    height: 50px;
+    display: block;
+    font-size: 14px;
+    color: #6bc4e5;
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+.nav ul li a:hover{
+    color: red;
+}
+.nav ul li a span{
+    width: 100%;
+    text-align: center;
+}
+.phone{
+    width: 108px;
+    height: 70px;
+    margin-left: 30px;
+    padding-top: 13px;
+    float: left;
+}
+.phone-num{
+    width: 108px;
+    height: 16px;
+    font-size: 12px;
+    color: #86c4e5;
+}
+.phone-num img{
+    width: 16px;
+    height: 16px;
+    border: none;
+    margin-right: 4px;
+}
+.phone form{
+    width: 106px;
+    height: 20px;
+    /*background-color: red;*/
+    margin-top: 8px;
+    border: 1px solid #86c4e5;
+    display: flex;
+}
+.phone form i{
+    width: 20px;
+    height: 20px;
+    background: url("/Nhaolilai/img/search_icon.png") no-repeat 0 0;
+    background-size: 20px 20px ;
+    cursor: pointer;
+}
+.phone form input{
+    width: 86px;
+    flex: 1;
+    height: 20px;
+    border: none;
+    outline: none;
+    line-height: 20px;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+/*help*/
+.help{
+    width: 100%;
+    /*height: 153px;*/
+    /*line-height: 25px;*/
+    box-sizing: border-box;
+    padding-left: 20px;
+    background-color: #ededed;
+    margin: 10px auto;
+    
+}
+.help-center{
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #626262;
+    position: relative;
+}
+.help-center span{
+    float: left;
+}
+.help-center i{
+    left: 80px;
+    width: 16px;
+    height: 10px;
+    background: url("/Nhaolilai/img/bj_4.png") no-repeat -2px -86px;
+    margin-top: 10px;
+    position: absolute;
+    
+}
+.guide{
+    width: 100%;
+    height: 0px;
+    /*display: flex;
+    justify-content: space-between;*/
+    display: none;
+    overflow: hidden;
+    height: 128px;
+}
+.guidebox{
+    width: 160px;
+    height: 128px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    float: left;
+}
+.guidebox dt{
+    width: 100%;
+    height: 22px;
+    box-sizing: border-box;
+    padding-left: 26px;
+    background: url(/Nhaolilai/img/bj3.png) no-repeat 0 0;
+    font-size: 20px;
+    line-height: 22px;
+    color: #666;
+    margin-bottom: 10px;
+    
+}
+.guidebox dd{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    color: #666;
+    box-sizing: border-box;
+    padding-left: 30px;
+    font-size: 14px;
+}
+.guidebox dd a{
+    color: #666;
+}
+.guidebox dd a:hover{
+    text-decoration: underline;
+}
+/*xinxi*/
+.info{
+    width: 100%;
+    height: 210px;
+    border-top: 1px solid #d5d5d5;
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+.info span{
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #898989;
+}
+.info span a{
+    color: #898989;
+}
+.kefu{
+    margin: 20px 0 20px 0;
+}
+.followus{
+    width: 75px;
+    height: 50px;
+    float: right;
+    position: relative;
+}
+.followus:hover .ewm{
+    display: block;
+}
+
+.followus .fu{
+    font-size: 12px;
+    color: #666;
+
+}
+.followus .fui{
+    display: block;
+    width: 30px;
+    height: 27px;
+    background: url("/Nhaolilai/img/weixin-1.png") no-repeat 0 -58px;
+    margin-left: 10px;
+}
+.followus .ewm{
+    display: block;
+    width: 180px;
+    height: 220px;
+    overflow: hidden;
+    border: 1px solid #666;
+    border-radius: 5px;
+    position: absolute;
+    top: -203px;
+    left: -117px;
+    background: #fff;
+    display: none;
+}
+.followus .ewm .followus-top{
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    height: 35px;
+    padding-left:16px ;
+    padding-top: 16px;
+    box-sizing: border-box;
+    color: #666;
+    border-bottom: 1px solid #666;
+}
+.ewm img{
+    width: 180px;
+    height: 184px;
+}
+.zaixiankefu{
+    width: 20px;
+    height: 72px;
+    display: block;
+    position: fixed;
+    top: 50%;
+    margin-top: -72px;
+    right: 0;
+}
+.zaixiankefu img{
+    border: none;
+}
+
+
+
+
+
+        /*goods*/
+        .goods{
+            width: 100%;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .goodsimg{
+            display: block;
+            width: 325px;
+            height: 270px;
+            float: left;
+        }
+        .shangpinImg{
+        	width: 325px;
+            height: 220px;
+            overflow: hidden;
+        }
+        .goodsimg img{
+            width: 325px;
+            height: 220px;
+            border: none;
+            display: block;
+            
+        }
+        .goodsimg:hover img{
+        	width: 375px;
+        	height: 254px;
+        	margin-left: -25px;
+        	margin-top: -17px;
+        	transition: all 1.2s;
+        }
+
+        .goodsinfo{
+            width: 325px;
+            height: 50px;
+            background-color: #87d0e3;
+            font-size: 14px;
+            color: #fff;
+            box-sizing: border-box;
+            padding-left: 14px;
+            flex-wrap: wrap;
+            align-items: left;
+            display: flex;
+            align-content: space-around;
+        }
+        .goodsinfo span{
+            height: 14px;
+            line-height: 14px;
+            width: 300px;
+            display: block;
+        }
+
+
+        /* 购物车 */
+        .sCar{
+            width: 20px;
+            height: 50px;
+            position: fixed;
+            right: 0;
+            top: 50%;
+            margin-top: 25px;
+        }
+        .sCar a{
+            display: block;
+            width: 20px;
+            height: 50px;
+            color: #6bc4df;
+            font-size: 14px;
+            text-align: center
+        }
+        .sCar i{
+            position: absolute;
+            top: -7px;
+            left: -7px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            color: #fff;
+            background-color: red;
+            font-style: normal;
+            font-size: 14px;
+            text-align: center;
+        }
